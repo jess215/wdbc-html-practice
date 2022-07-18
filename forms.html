@@ -63,7 +63,7 @@
 
         <p>
             <label for="xs">XS:</label>
-            <input type="radio" name="size" id="xs" value="xs">
+            <input type="radio" name="size" id="xs" value="xs" checked>
             <label for="s">S:</label>
             <input type="radio" name="size" id="s" value="s">
             <label for="m">M:</label>
@@ -82,8 +82,22 @@
                 <option value="ferret">Ferret</option>
             </select>
         </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="10" value="5" name="cheese-level">
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea id="requests" rows="5" cols="40" name="requests" placeholder="Type something here"></textarea>
+        </p>
         <button>Submit</button>
     </form>
+
+    <h2>Validations Demo</h2>
+    <form></form>
     
 </body>
 </html>
